@@ -1,0 +1,57 @@
+{
+    "name": "Python",
+    "package": "Python",
+    "index": "index.html",
+    "selectors": {
+        "h1, h2": [
+            {
+                "type":"Resource",
+                "regexp":"¶",
+                "replacement": "",
+                "matchpath": "reference"
+            },
+            {
+                "type":"Guide",
+                "regexp":"¶",
+                "replacement": "",
+                "matchpath": "tutorial"
+            }
+        ],
+        "dl.py.function dt.sig.sig-object.py": {
+            "type":"Function",
+            "regexp":"@[[:alpha:]]+[.]{1}|¶",
+            "replacement": ""
+        },
+        "dl.py.exception dt.sig.sig-object.py": {
+            "type":"Exception",
+            "regexp":"exception|¶",
+            "replacement": ""
+        },
+        "dl.py.class dt.sig.sig-object.py": {
+            "type":"Class",
+            "regexp":"¶",
+            "replacement": ""
+        },
+        "dl.py.method dt.sig.sig-object.py": {
+            "type":"Method",
+            "regexp":"¶",
+            "replacement": ""
+        },
+        "dl.py.attribute dt.sig.sig-object.py": {
+            "type":"Attribute",
+            "regexp":"¶",
+            "replacement": ""
+        },
+        "dl.py.data dt.sig.sig-object.py": {
+            "type":"Enum",
+            "regexp":"¶",
+            "replacement": ""
+        }
+    },
+    "ignore": [
+        "ABOUT"
+    ],
+    "icon32x32": "./python.png",
+    "allowJS": true,
+    "ExternalURL": ""
+}
